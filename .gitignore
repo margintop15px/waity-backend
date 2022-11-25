@@ -1,0 +1,17 @@
+/target
+/logs
+/classes
+/checkouts
+/.idea
+/.lein-*
+/.nrepl-port
+/dev/resources/local.edn
+/dev/src/local.clj
+/tmp
+
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+*.iml
+.DS_Store

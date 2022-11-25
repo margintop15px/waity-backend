@@ -1,0 +1,11 @@
+{:duct.profile/base
+ {:duct.core/project-ns       waity-backend
+  :waity-backend.server/jetty {:port 8080 :join? false}}
+
+ :fx.module/autowire                {:root waity-backend}
+ :fx.module/repo                    {:migrate {:strategy :update-drop}}
+ :fx.containers.postgres/connection {}
+
+ :duct.profile/dev                  #duct/include "dev"
+ :duct.profile/local                #duct/include "local"
+ :duct.profile/prod                 {}}
